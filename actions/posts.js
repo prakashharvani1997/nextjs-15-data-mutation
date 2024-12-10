@@ -45,5 +45,9 @@ let imageUrl;
 
   export async function togglePostLikeStatus(postId) {
    await updatePostLikeStatus( postId,2)
+   // for Specific page
    revalidatePath('/feed')
+   // for all routes with root layout
+  //  revalidatePath('/','layout')
+
   }
