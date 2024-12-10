@@ -1,6 +1,6 @@
-export default function LikeButton({action}) {
+export default function LikeButton() {
   return (
-    <button className="like-button" formAction={action}>
+    <button className="like-button"  >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
