@@ -40,14 +40,16 @@ let imageUrl;
       content,
       userId: 1
     });
+    
+    revalidatePath('/','layout')
     redirect("/feed");
   }
 
   export async function togglePostLikeStatus(postId) {
    await updatePostLikeStatus( postId,2)
    // for Specific page
-   revalidatePath('/feed')
+  //  revalidatePath('/feed')
    // for all routes with root layout
-  //  revalidatePath('/','layout')
+   revalidatePath('/','layout')
 
   }
