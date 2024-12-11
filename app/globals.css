@@ -159,8 +159,7 @@ main {
 }
 
 .post img {
-  width: 8rem;
-  height: 6rem;
+ 
   object-fit: cover;
 }
 
@@ -204,4 +203,10 @@ main {
 
 .liked .like-button:hover svg {
   fill: transparent;
+}
+
+.post-image {
+  position: relative;
+  width: 8rem;
+  height: 6rem;
 }
