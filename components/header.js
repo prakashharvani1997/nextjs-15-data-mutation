@@ -6,7 +6,12 @@ export default function Header() {
   return (
     <header id="main-header">
       <Link href="/">
-        <Image src={logo} alt="Mobile phone with posts feed on it" />
+        <Image src={logo} 
+        height={100} // recommended for manual fix height width
+        width={100} // recommended for manual fix height width
+        
+        // sizes='10vW' recommended for responsive design
+        alt="Mobile phone with posts feed on it" />
       </Link>
       <nav>
         <ul>
